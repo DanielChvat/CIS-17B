@@ -14,12 +14,9 @@
 #define MODEL_H
 
 class Model {
+private:
 public:
     Model();
-    Model(const Model& orig);
-    virtual ~Model();
-private:
-
 };
 
 #endif /* MODEL_H */

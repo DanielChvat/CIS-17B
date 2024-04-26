@@ -12,12 +12,4 @@
 
 #include "Cart.h"
 
-Cart::Cart() {
-}
-
-Cart::Cart(const Cart& orig) {
-}
-
-Cart::~Cart() {
-}
 

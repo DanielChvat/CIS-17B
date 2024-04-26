@@ -13,13 +13,12 @@
 #ifndef CART_H
 #define CART_H
 
-class Cart {
-public:
-    Cart();
-    Cart(const Cart& orig);
-    virtual ~Cart();
-private:
+#include "Containers.h"
 
+class Cart {
+private:
+    Containers::ItemVector items;
+public:
 };
 
 #endif /* CART_H */

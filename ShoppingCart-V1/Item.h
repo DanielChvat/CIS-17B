@@ -13,12 +13,24 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-class Item {
-public:
-    Item();
-    Item(const Item& orig);
-    virtual ~Item();
+#include <string>
+#include "Containers.h"
+
+class Item : public Interfaces::Serializable{
 private:
+    std::string m_name;     
+    float m_price;
+    int m_count;
+    int m_id;
+public:
+    Item() : m_name(""), m_price(0.f), m_count(0), m_id(0){};
+    Item(std::string name, float price, int count, int id): m_name(name), m_price(price), m_count(count), m_id(id){};
+    std::string getName() {return m_name;}
+    float getPrice() {return m_price;}
+    int getCount() {return m_count;}
+    int getId() {return m_id;}
+    Containers::Datastream Serialize();
+    void Load(Containers::Datastream *data);
 
 };
 

@@ -12,12 +12,12 @@
 
 #include "Item.h"
 
-Item::Item() {
+Containers::Datastream Item::Serialize(){
+    Containers::Datastream data;
+    return data;
 }
 
-Item::Item(const Item& orig) {
-}
+void Item::Load(Containers::Datastream *data){
 
-Item::~Item() {
 }
 

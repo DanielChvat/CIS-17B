@@ -12,12 +12,3 @@
 
 #include "Database.h"
 
-Database::Database() {
-}
-
-Database::Database(const Database& orig) {
-}
-
-Database::~Database() {
-}
-

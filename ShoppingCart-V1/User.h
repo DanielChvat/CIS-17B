@@ -13,13 +13,14 @@
 #ifndef USER_H
 #define USER_H
 
+#include <string>
+
 class User {
+private:
+    std::string m_Username;
+    std::string m_password;
 public:
     User();
-    User(const User& orig);
-    virtual ~User();
-private:
-
 };
 
 #endif /* USER_H */

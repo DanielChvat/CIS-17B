@@ -15,9 +15,6 @@
 
 class Database {
 public:
-    Database();
-    Database(const Database& orig);
-    virtual ~Database();
 private:
 
 };

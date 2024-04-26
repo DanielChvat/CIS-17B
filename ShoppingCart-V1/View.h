@@ -13,13 +13,15 @@
 #ifndef VIEW_H
 #define VIEW_H
 
+#include <iostream>
+#include <string>
+
 class View {
-public:
-    View();
-    View(const View& orig);
-    virtual ~View();
 private:
 
+public:
+    void Write(std::string text){std::cout << text;}
+    void Writeln(std::string text){std::cout << text << std::endl;}
 };
 
 #endif /* VIEW_H */
