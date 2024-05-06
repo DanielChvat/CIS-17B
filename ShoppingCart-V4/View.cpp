@@ -16,5 +16,8 @@
 
 
 void View::DisplayItem(Item &item){
-    std::cout << std::left << std::setw(5) << item.getId() << std::setw(20) << item.getName() << std::setw(10) << item.getCount() << std::setw(10) << item.getPrice() << std::endl;
+    std::cout << std::left << std::setw(5) << item.getId() 
+            << std::setw(20) << item.getName() << std::setw(10) 
+            << item.getCount() << std::setw(10) << item.getPrice() 
+            << std::endl;
 }

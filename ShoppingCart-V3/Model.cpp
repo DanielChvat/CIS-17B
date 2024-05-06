@@ -42,6 +42,8 @@ void Model::displayStore(){
     item[2] = c;
     item[3] = d;
 
+    terminal.Writeln("ID   Product Name        Stock     Price");
+    terminal.Writeln("----------------------------------------");
     for(int i=0; i < nitems; i++){
        terminal.DisplayItem(item[i]);
     }
@@ -52,6 +54,7 @@ Model::Model(){
         database.LoadDatabase("debug.bin");
     }catch(std::string s){
         std::cout << s << std::endl;
+        exit(-1);
     }
     Login();
     displayStore();
